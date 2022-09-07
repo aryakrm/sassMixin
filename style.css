@@ -1,0 +1,52 @@
+div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid red;
+  padding: 10px;
+  flex-direction: column;
+}
+div h1 {
+  text-align: center;
+  font-size: 2rem;
+  color: green;
+  border-bottom: 1px solid blue;
+}
+div section {
+  margin: 10px;
+}
+div section:nth-of-type(1) {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid green;
+  padding: 10px;
+  padding: 0;
+}
+div section:nth-of-type(1) article:nth-of-type(odd) {
+  text-align: center;
+  font-size: 1rem;
+  color: blue;
+  border: 1px solid green;
+  padding: 10px;
+}
+div section:nth-of-type(1) article:nth-of-type(even) {
+  text-align: center;
+  font-size: 1rem;
+  color: red;
+  border: 1px solid green;
+  padding: 10px;
+}
+div section:nth-of-type(2) {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid blue;
+  padding: 10px;
+  padding: 10px;
+}
+div section:nth-of-type(2) article {
+  text-align: center;
+  font-size: 24px;
+  color: green;
+}/*# sourceMappingURL=style.css.map */
