@@ -2,7 +2,7 @@ $color-primary: blue;
 $color-secondary: red;
 $color-tertiary: green;
 
-@mixin exercise($color, $border-color, $font-size) {
+@mixin exercise($color, $border-color, $font-size: 1rem) {
   color: $color;
   border: 1px solid $border-color;
   font-size: $font-size;
@@ -29,10 +29,10 @@ body {
       &:nth-of-type(1) {
         article {
           &:nth-child(odd) {
-            @include exercise($color-primary, $color-tertiary, 1rem);
+            @include exercise($color-primary, $color-tertiary);
           }
           &:nth-child(even) {
-            @include exercise($color-secondary, $color-tertiary, 1rem);
+            @include exercise($color-secondary, $color-tertiary);
           }
         }
       }
